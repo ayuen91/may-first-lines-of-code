@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radio Button</title>
 </head>
-<body class="container">
+<body >
+    <form action="index.php" method="post" class="container">
     <h1>What is your gender?</h1>
     <!-- this is just a representation of the code-->
-    <label for="male">Male:</label>
-    <input type="radio" id="male" title="he" name="gender"><br>
-    <label for="female">Female:</label>
-    <input type="radio" id="female" title="she" name="gender"><br>
-    <label  id="other" for="other">Other:</label>
-    <input type="radio" id="other" title="they" name="gender"><br>
-    <input type="button" value="Submit" id="submit">
+        <label for="male">Male:</label>
+        <input type="radio" id="male" title="he" name="gender"><br>
+        <label for="female">Female:</label>
+        <input type="radio" id="female" title="she" name="gender"><br>
+        <label  id="other" for="other">Other:</label>
+        <input type="radio" id="other" title="they" name="gender"><br>
+        <input type="button" value="Submit" id="submit">
+    </form>
 
     <script>
         document.getElementById('male').onclick = function() {
