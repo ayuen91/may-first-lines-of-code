@@ -53,6 +53,3 @@ button:active{
 .mathSigns:hover{
     background-color: rgb(255, 195, 0);
 }
-.mathSigns:active{
-    background-color: rgb(255, 225, 0);
-}
