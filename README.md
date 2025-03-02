@@ -28,7 +28,7 @@
 
 6. Push the commit to the GitHub repository:
     ```sh
-    git push -u origin master
+    git push -u origin main
     ```
 
 Replace `<your-github-repo-url>` with the URL of your GitHub repository.
