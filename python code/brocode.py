@@ -1,6 +1,9 @@
-import getpass
-name = input("Enter your name: ")
-password = getpass.getpass("Enter your password: ")
+symbol = "$"
+rows = int(input("Enter the number of rows: "))
 
-
-print(f"Your name has {len(name)} characters {name.upper()} your password is {password}" )
+for i in range(rows):
+    for j in range(rows - i - 1):
+        print(" ", end="")
+    for k in range(2 * i + 1):
+        print(symbol, end="")
+    print()
