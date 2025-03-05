@@ -1,6 +1,9 @@
-name = input('what is your name? ')
-age = input('how old are you? ')
+age = int(input("enter your age: "))
+name = input("enter your name: ")
 
-age = int(age) + 1
-
-print('Happy Birthday, ' + name + 'you are now ' + str(age) + 'years old!')  # Happy Birthday, name!
+def print_birthday(name, age):
+    for x in range(age):
+        for i in range(age - x - 1):
+            print(f" happy Birthday {name} you are {age} years old")
+    print()  
+print_birthday(name, age)      
