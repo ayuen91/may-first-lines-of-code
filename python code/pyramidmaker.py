@@ -2,7 +2,6 @@ number = int(input("Enter the number you want to use: "))
 rows = int(input("Enter the number of rows: "))
 
 def diamond_maker(number, rows):
-    
 
     for row in range (rows):
         for i in range(rows - row -1):
