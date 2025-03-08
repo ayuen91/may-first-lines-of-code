@@ -29,3 +29,9 @@ for question in questions:
     
 score = int((score / len(questions))*100)    
 print(f"Your current score is {score}%")    
+'''
+    this project in particular made me cry 
+    why does this have to be hard the syntax 
+    is easy but I keep making stupid mistakes
+    why Maaahn!!!!
+'''
