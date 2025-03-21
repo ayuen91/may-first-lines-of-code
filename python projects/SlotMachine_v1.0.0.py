@@ -1,11 +1,13 @@
 import random
 import time
+
 def main():
     balance = 100
     is_playing = True
     slot = []
+
     while is_playing:
-        print("Welcome to Ayuen's Slot Machine Game!")
+        print("**WELCOME TO AYUEN'S SLOT MACHINE GAME!**")
         print(f"You have ${balance} in your account")
         symbols = ["🍒", "🍋", "🍊", "⭐️", "💀", "🛎"]
 
@@ -25,7 +27,9 @@ def main():
         time.sleep(1)
         print("***************************")
         print()
+        time.sleep(.1)
         print(spinning(symbols, slot))
+        time.sleep(.1)
         print()
         print("***************************")
 
@@ -78,15 +82,17 @@ def main():
         balance += get_payout(slot, bet_amount)
         print(f"Your balance is now ${balance}")
         slot.clear()
+
         def game_over(balance):
             if balance < 0:
-                print("You are out of money")
+                print(f"GAME OVER!! You are out of money, your balance is ${balance}")
                 return False
             play_again = input("Do you want to play again? (y/n): ").lower()
             if play_again != "y":
                 return False
             return True
         is_playing = game_over(balance)
+
     print("Thank you for playing")
     print(f"Your final balance is ${balance}")
 
